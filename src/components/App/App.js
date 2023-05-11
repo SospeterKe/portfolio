@@ -12,15 +12,16 @@ function App() {
           </ul>
         </nav>
         <div className='main'>
-        <img alt="3D cubes" className='hero-image' src="https://image.canva.com/uhm_pSRdDhB2tanLmYy9XQ%3D%3D/pyv9IxLEVmXCYuI9WCL4Jg%3D%3D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20230508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230508T032438Z&X-Amz-Expires=43570&X-Amz-Signature=be41e0c29d17db0d7e3174b1ef325b713b969c02eb01c13582c687f249c97e92&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2008%20May%202023%2015%3A30%3A48%20GMT"></img>
-        
-        <div className="main-title">
-          <p>Hi,</p>
-          <h1>I'm Sospeter Kedogo</h1>
-          <p>You can call me Peter.<br/>I'm a <span>web developer.</span></p>
-          <button>Let's chat</button>
-        </div>
-        </div>        
+          <div className='hero-image'>
+            <img alt="3D cubes" src="https://image.canva.com/uhm_pSRdDhB2tanLmYy9XQ%3D%3D/pyv9IxLEVmXCYuI9WCL4Jg%3D%3D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20230508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230508T032438Z&X-Amz-Expires=43570&X-Amz-Signature=be41e0c29d17db0d7e3174b1ef325b713b969c02eb01c13582c687f249c97e92&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2008%20May%202023%2015%3A30%3A48%20GMT"></img>
+          </div>
+          <div className="main-title">
+            <p>Hi,</p>
+            <h1>I'm Sospeter Kedogo</h1>
+            <p>You can call me Peter.<br/>I'm a <span>web developer.</span></p>
+            <button className='hero-btn'>Let's chat</button>
+          </div>
+          </div>        
       </header>
 
       <section className='aboutme'>
@@ -39,23 +40,29 @@ function App() {
         </div>
 
         <div className='calculator'>
-          <p className='openingtag'>&lt;script&gt;</p>
-          <h1>Javascript Calculator</h1>
-          <p>Built a calculator that performs basic math operations very fast but more efficiently.</p>
-          <p className='closingtag'>&lt;script/&gt;</p>
-          <img alt="calculator display" className='calcimgage'></img>
+          <div className='calcImage'>
+            <img src="https://cdn-icons-png.flaticon.com/512/4645/4645203.png" alt="calculator display" className='calcimgage'></img>
+          </div>
+          <div className='calcText'>
+            <p className='openingtag'>&lt;script&gt;</p>
+            <h1>Javascript Calculator</h1>
+            <p>Built a calculator that performs basic math operations very fast but more efficiently.</p>
+            <p className='closingtag'>&lt;script/&gt;</p>
+          </div>
         </div>
 
+
         <div className='quotegenerator'>
-          <p>"</p>
+          <p className='quotemark'>"</p>
           <h1>Quote Generator</h1>
           <p>Built an app that uses an API to fetch quotes about life and displays them </p>
-          <p>"</p>
+          <p className='quotemark'>"</p>
         </div>
 
         <div className='drumpads'>
           <h1>Drum pads</h1>
           <p>This app has nine pads, each with a unique sound. When you click on either of them, it plays the sound. You can play it in a pattern to make a complete beat sequence.</p>
+          <img src="https://m.media-amazon.com/images/I/61W4xdnOeZL.png" alt="drums pad"></img>
           <button>Check it Out!</button>
         </div>
       </section>
