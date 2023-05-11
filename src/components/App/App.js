@@ -11,7 +11,7 @@ function App() {
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-
+        <div className='main'>
         <img alt="3D cubes" className='hero-image' src="https://image.canva.com/uhm_pSRdDhB2tanLmYy9XQ%3D%3D/pyv9IxLEVmXCYuI9WCL4Jg%3D%3D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20230508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230508T032438Z&X-Amz-Expires=43570&X-Amz-Signature=be41e0c29d17db0d7e3174b1ef325b713b969c02eb01c13582c687f249c97e92&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2008%20May%202023%2015%3A30%3A48%20GMT"></img>
         
         <div className="main-title">
@@ -19,14 +19,18 @@ function App() {
           <h1>I'm Sospeter Kedogo</h1>
           <p>You can call me Peter.<br/>I'm a <span>web developer.</span></p>
           <button>Let's chat</button>
+        </div>
         </div>        
       </header>
 
       <section className='aboutme'>
-        <h1>About Me</h1>
-        <img alt="a boy using a laptop" className='aboutmeImage' src="https://image.canva.com/sz_Kffk1HEEXWHosq0P80Q%3D%3D/XpLsbFLMxiE5ALd0FYty7A%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20230508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230508T121614Z&X-Amz-Expires=21630&X-Amz-Signature=1f8ba1f4d13dfc220a1a2389bdbff772d252010c2dff08483f5af59db7ac560f&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2008%20May%202023%2018%3A16%3A44%20GMT"></img>
-        <p>I'm a web developer currently at The Univeristy of Northampton taking a bachelor's degree in CyberSecurity. I love coding, and creating interesting stuff with my knowledge and skills.</p>
-        <hr/>
+        <div className='aboutText'>
+          <h1>About Me</h1>
+          <p>I'm a web developer currently at The Univeristy of Northampton taking a bachelor's degree in CyberSecurity. I love coding, and creating interesting stuff with my knowledge and skills.</p>
+          </div>
+          <div className='aboutImg'>
+          <img alt="a boy using a laptop" className='aboutmeImage' src="https://image.canva.com/sz_Kffk1HEEXWHosq0P80Q%3D%3D/XpLsbFLMxiE5ALd0FYty7A%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20230508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230508T121614Z&X-Amz-Expires=21630&X-Amz-Signature=1f8ba1f4d13dfc220a1a2389bdbff772d252010c2dff08483f5af59db7ac560f&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2008%20May%202023%2018%3A16%3A44%20GMT"></img>
+        </div>
       </section>
 
       <section>

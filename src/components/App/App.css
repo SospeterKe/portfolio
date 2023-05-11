@@ -1,27 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Suranna&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Suranna;
+}
+.App{
+    background-color: #000;
+    color: #fff;
 }
 header{
     width: 100%;
     height: 100svh;
-    background-image: linear-gradient(to left,#38b6ff,#000,#732ac9 );
+    background-image: linear-gradient(to left,#1b5a82,#0f0d4a,#070119,#321074,#732ac9);
     text-align: right;
-    display: grid;
-    grid-template-columns: 50px auto auto 50px;
-    grid-template-rows: 50px 100px 385px 50px ;
 
 }
 .navbar{
-    width: 100%;
+    width: 80%;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: right;
     border: 2px solid #fff;
-    grid-column: 2 / 4;
-    grid-row: 2;
+    margin: auto;
 
 }
 .navbar ul{
@@ -36,52 +38,56 @@ header{
     text-decoration: none;
     padding: 20px;
  }
+ .main{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 20px auto;
+ }
 .hero-image{
-    width: 330px;
+    max-width: 330px;
     border: 2px solid #fff;
-    grid-row: 3;
-    grid-column: 2 / 3;
+    flex-basis: 50%;
 }
 .main-title{
     border: 2px solid #fff;
-    grid-row: 3 ;
-    grid-column: 3 / 4;
-    color: #fff;
     font-size: 30px;
+    flex-basis: 50%;
+    
 }
 .aboutme{
-    width: 100%;
+    width: 80%;
     height: 100vh;
-    color:#fff;
-    background-color: #000;
-    border: 1px solid #fff;
-    display: grid;
-    grid-template-rows: 50px 100px 385px 50px;
-    grid-template-columns:50px 50% 50% 50px ;
-}
-.aboutme h1{
-    grid-row: 2;
-    grid-column: 2;
     border: 2px solid #fff;
-    font-size: 80px;
+    font-size: 30px;
+    display: flex;
+    margin: auto;
 }
-.aboutme p{
-    grid-row: 3;
-    grid-column: 2 / 3;
+.aboutText{
     border: 2px solid #fff;
     text-align: justify;
-    width: 60%;
+    flex-basis: 50%;
+    padding: 50px;
+}
+.aboutText h1{
+    font-size: 80px;
+}
+.aboutText p{
+    font-size: 20px;
+}
+.aboutImg{
+    border: 2px solid #fff;
+    flex-basis: 50%;
+    margin: auto;
 }
 .aboutmeImage{
-    width: 330px;
-    grid-column: 3 / 4;
-    grid-row: 2 / 4;
-    border: 2px solid #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .projects{
     width: 100%;
-    background-color: #000;
-    color: #fff;
     height: 100svh;
     font-size: 60px;
     display: flex;
@@ -96,29 +102,5 @@ header{
 .calculator, .quotegenerator, .drumpads{
     width: 100%;
     height: 100svh;
-    color: #fff;
-    background-color: #000;
     font-size: 30px;
-}
-.calculator{
-    display: grid;
-    grid-template-columns: 50px 50% 50% 50px;
-    grid-template-rows: 50px  50px;
-}
-.openingtag{
-    grid-column: 2 / 3;
-    grid-row: 2;
-}
-.calculator h1{
-    grid-row: 3;
-}
-.calculator p{
-    text-align: justify;
-}
-.calcimage{
-    grid-column: 3 / 4;
-    grid-row: 2 / 5;
-}
-.closingtag{
-    grid-row: 5;
 }
