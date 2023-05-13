@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Suranna&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Suranna;
 }
+
 h1{
     font-size: 5rem;
     line-height: 100%;
+}
+h2{
+    font-size: 4rem;
+    line-height: 100%; 
+    margin: 50px 0;   
 }
 p{
     font-size: 20px; 
@@ -18,7 +25,6 @@ p{
     color: #fff;
 }
 header{
-    width: 100%;
     height: 100svh;
     background-image: linear-gradient(to left,#1b5a82,#0f0d4a,#070119,#321074,#732ac9);
     text-align: right;
@@ -44,7 +50,7 @@ header{
     text-align: center;
     text-decoration: none;
     padding:10px;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0 20px;
     border-radius: 10px;
     transition: 0.5s;
@@ -61,7 +67,6 @@ header{
  }
 .hero-image{
     flex-basis: 50%;
-    display: block;
     height: 100%;
 }
 .hero-image img{
@@ -73,7 +78,6 @@ header{
 .main-title{
     flex-basis: 50%;  
     margin: auto; 
-    height: 80%;
 }
 .hero-btn{
     padding: 10px 30px;
@@ -84,8 +88,6 @@ header{
 }
 .aboutme{
     width: 80%;
-    height: 100vh;
-    max-height: 100svh;
     font-size: 30px;
     display: flex;
     margin: auto;
@@ -108,82 +110,188 @@ header{
     width: 60%;
 }
 .projects{
-    width: 100%;
-    height: 100svh;
     font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .projects p{
-    max-width: 60%;
+    max-width: 50%;
     font-size: 5rem;
     text-align: justify;
     line-height: 90%;
+    padding: 100px 0;
 }
 
 .calculator, .quotegenerator, .drumpads{
-    width: 100%;
-    height: 100svh;
     font-size: 30px;
-    border: 1px solid #fff;
 }
 .calculator{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    place-items: center;
 }
 .calcText{
-    border: 1px solid #fff;
     padding: 20px;
     text-align: right;
 }
+
 .calcImage img{
-    border: 1px solid #fff;
-    width: 80%;
-    object-fit: contain;
+    width: 70%;
 }
 .quotegenerator{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    height: 100vh;
 }
 .quotemark{
-    font-size: 10rem;
+    font-size: 15vw;
     line-height: 100%;
+    position: absolute;
+}
+.leftquote{
+    top: 15%;
+    left: 25%;
+}
+.rightquote{
+    top: 75%;
+    right: 25%;
+}
+
+.quotetext{
+    border: 1px solid #fff;
+    padding: 80px;
+    margin-top: 10%;
 }
 .drumpads{
+    margin-top: 100px;
     display: grid;
     grid-template-columns: 50px 1fr 50px 1fr ;
-    border: 2px solid #fff;
     grid-gap: 20px;
 }
-.drumpads h1{
-    border: 2px solid #fff;
+.drumpads h2{
     grid-column: 2;
     grid-row: 2;
+    padding-bottom: 60px;
 
 }
 .drumpads p{
     grid-column: 2;
-    border: 2px solid #fff;
     text-align: justify;
     grid-row: 3;
+    padding-bottom: 30px;
 
 }
 .drumpads img{
     grid-row: 2 / 6;
     grid-column: 4 ;
     width: 50%;
-    border: 2px solid #fff;
 
 }
 .drumpads button{
     grid-column: 2;
     grid-row: 4;
-    border: 2px solid #fff;
 
 }
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card img{
+    padding: 20px;
+    width: 400px;
+    border-radius: 2rem;
+}
+
+.music-player{
+    padding-top: 50px;
+}
+.songs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+.song{
+    border: 1px solid #fff;
+    margin: 20px;
+    border-radius: 0.50rem;
+    padding: 20px;
+    background-color: #0b0705;
+}
+.song img{
+    border-radius: 0.25rem;
+    width: 200px;
+}
+.artist{
+ font-size: 1rem;
+ line-height: 0.25rem;
+ padding-bottom: 20px;
+}
+
+.song button{
+    border: 2px solid #fff;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+
+}
+.song button:hover{
+    color: #000;
+    background-color: #fff;
+}
+.gaming{
+    height: 100vh;
+    position: relative;
+}
+
+.video{
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    
+}
+.content {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    color: #f1f1f1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%; 
+}
+.content h2{ 
+    text-align: center;
+    margin: 20% auto;
+    width: 80%;
+    line-height: 4rem;
+}
+footer{
+    width: 90%;
+    margin-top: 100px;
+    text-align: right;
+}
+footer ul li{
+    display: inline-block;
+}
+footer ul li a{
+    color: #fff;
+    font-size: 3rem;
+    padding: 0 10px;
+}
+
+
 
 
 

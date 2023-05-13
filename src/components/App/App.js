@@ -1,6 +1,11 @@
 import './App.css';
+import { FaPlay, FaStop, FaGithub,FaInstagram, FaLinkedin, FaTwitter, FaQuoteLeft, FaQuoteRight, FaEnvelope } from "react-icons/fa";
+
 
 function App() {
+
+  const videoID = "n4b8FRUDNZo"; 
+
   return (
     <div className="App">
       <header>
@@ -26,7 +31,7 @@ function App() {
 
       <section className='aboutme'>
         <div className='aboutText'>
-          <h1>About Me</h1>
+          <h2>About Me</h2>
           <p>I'm a web developer currently at The Univeristy of Northampton taking a bachelor's degree in CyberSecurity. I love coding, and creating interesting stuff with my knowledge and skills.</p>
           </div>
           <div className='aboutImg'>
@@ -41,11 +46,11 @@ function App() {
 
         <div className='calculator'>
           <div className='calcImage'>
-            <img src="https://cdn-icons-png.flaticon.com/512/4645/4645203.png" alt="calculator display" className='calcimgage'></img>
+            <img src="https://cdn-icons-png.flaticon.com/512/4645/4645203.png" alt="calculator display"></img>
           </div>
           <div className='calcText'>
             <p className='openingtag'>&lt;script&gt;</p>
-            <h1>Javascript Calculator</h1>
+            <h2>Javascript Calculator</h2>
             <p>Built a calculator that performs basic math operations very fast but more efficiently.</p>
             <p className='closingtag'>&lt;script/&gt;</p>
           </div>
@@ -53,71 +58,102 @@ function App() {
 
 
         <div className='quotegenerator'>
-          <p className='quotemark'>"</p>
-          <h1>Quote Generator</h1>
-          <p>Built an app that uses an API to fetch quotes about life and displays them </p>
-          <p className='quotemark'>"</p>
+          <p className='quotemark leftquote'><FaQuoteLeft/></p>
+          <div className="quotetext">
+            <h2>Quote Generator</h2>
+            <p>Built an app that uses an API to fetch quotes about life and displays them </p>
+          </div>
+          <p className='quotemark rightquote'><FaQuoteRight/></p>
         </div>
 
         <div className='drumpads'>
-          <h1>Drum pads</h1>
+          <h2>Drum pads</h2>
           <p>This app has nine pads, each with a unique sound. When you click on either of them, it plays the sound. You can play it in a pattern to make a complete beat sequence.</p>
           <img src="https://m.media-amazon.com/images/I/61W4xdnOeZL.png" alt="drums pad"></img>
           <button>Check it Out!</button>
         </div>
       </section>
 
-      <section>
-        <h1>Besides Work...</h1>
-        <div className='imageSlider'>
-          <img alt="I love music"></img>
-          <img alt="Headphones"></img>
-          <img alt="Spinning vinyl"></img>
+      <section className='hobbies'>
+        <h2>Besides Work...</h2>
+        <div className='cards'>
+          <div className='card'>
+            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="I love music"></img>
+          </div>
+
+          <div className='card'>
+            <img src="https://images.unsplash.com/photo-1575975243243-5462a2054ed2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="Headphones"></img>
+          </div>
+
+          <div className='card'>
+            <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1060&q=80" alt="Spinning vinyl"></img>
+          </div>
+          
         </div>
 
-        <div>
+        <div className='music-player'>
           <h2>Favourite Songs</h2>
-          <div>
-            <img alt="spinning disc with album icon"></img>
-            <p>Fireworks - Katy Perry</p>
-            <button>play</button>
-            <button>stop</button>
+          <div className='songs'>
+          <div className='song'>
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Firework_cover.png" alt="spinning disc with album icon"></img>
+            <p className='title'>Fireworks</p>
+            <p className='artist'>Katy Perry</p>
+
+            <button>< FaPlay /></button>
+            <button ><FaStop/></button>
           </div>
-          <div>
-            <img alt="spinning disc with album icon"></img>
-            <p>I like it - Cardi B(ft. other artists)</p>
-            <button>play</button>
-            <button>stop</button>
+
+          <div className='song'>
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Cardi_B%2C_Bad_Bunny_and_J_Balvin_-_I_Like_It_%28Single_Cover%29.png" alt="spinning disc with album icon"></img>
+            <p className='title'>I like it</p>
+            <p className='artist'>Cardi B ft. J.Balvin & Bad Bunny</p>
+            <button >< FaPlay /></button>
+            <button><FaStop/></button>
           </div>
-          <div>
-            <img alt="spinning disc with album icon"></img>
-            <p>Dynamite - BTS</p>
-            <button>play</button>
-            <button>stop</button>
+
+          <div className='song'>
+            <img src="https://assets.teenvogue.com/photos/5f340b70d120ffde6de633c8/1:1/w_1461,h_1461,c_limit/Dynamite_GroupPoster-A_FIN_0812.jpg" alt="spinning disc with album icon"></img>
+            <p className='title'>Dynamite</p>
+            <p className='artist'>BTS</p>
+            <button>< FaPlay /></button>
+            <button ><FaStop/></button>
           </div>
-          <div>
-            <img alt="spinning disc with album icon"></img>
-            <p>Walk it talk it - Migos</p>
-            <button>play</button>
-            <button>stop</button>
+
+          <div className='song'>
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Migos_-_Walk_It_Talk_It.jpg" alt="spinning disc with album icon"></img>
+            <p className='title'>Walk it talk it</p>
+            <p className='artist'>Migos</p>
+            <button >< FaPlay/></button>
+            <button ><FaStop /></button>
+          </div>
           </div>
 
         </div>
       </section>
 
-      <section>
-        <h1>I also enjoy competitive mobile gaming</h1>
+      <section className='gaming'>
+      
+
+        <iframe className="video"
+          src={`https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1&loop=1&playlist=${videoID}&controls=0`}
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+        <div className='content'>
+          <h2 >I also enjoy competitive mobile gaming</h2>
+        </div>
+          
       </section>
 
       <footer>
-        <h1>I do freelance work</h1>
+        <h2>I do freelance work</h2>
         <p>Have an exciting project where you need some help? <br/>Send me a message and <a href="email">let's chat</a></p>
         <ul>
-          <li><a href="instagram.html">Instagram</a></li>
-          <li><a href="twitter.html">twitter</a></li>
-          <li><a href="email.html">Email</a></li>
-          <li><a href="github.html">github</a></li>
-          <li><a href="linkedin">linkedin</a></li>
+          <li><a href="instagram.html"><FaInstagram/></a></li>
+          <li><a href="twitter.html"><FaTwitter/></a></li>
+          <li><a href="email.html"><FaEnvelope/></a></li>
+          <li><a href="github.html"><FaGithub/></a></li>
+          <li><a href="linkedin"><FaLinkedin/></a></li>
         </ul>
       </footer>
     </div>
