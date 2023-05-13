@@ -16,32 +16,27 @@ function App() {
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-        <div className='main'>
+        <div className='main flex-container'>
           <div className='hero-image'>
-            <img alt="3D cubes" src="https://image.canva.com/uhm_pSRdDhB2tanLmYy9XQ%3D%3D/pyv9IxLEVmXCYuI9WCL4Jg%3D%3D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20230508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230508T032438Z&X-Amz-Expires=43570&X-Amz-Signature=be41e0c29d17db0d7e3174b1ef325b713b969c02eb01c13582c687f249c97e92&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2008%20May%202023%2015%3A30%3A48%20GMT"></img>
+            <img src="https://static.vecteezy.com/system/resources/previews/008/878/184/non_2x/icosahedron-geometric-shape-3d-illustration-free-png.png" alt="Icosahedron geometric shape 3D illustration" ></img>
           </div>
           <div className="main-title">
             <p>Hi,</p>
             <h1>I'm Sospeter Kedogo</h1>
-            <p>You can call me Peter.<br/>I'm a <span>web developer.</span></p>
-            <button className='hero-btn'>Let's chat</button>
+            <p>As a web developer, I love crafting beautiful and engaging websites using HTML,CSS , JavaScript, and React. Let's collaborate to turn your online ideas into reality!</p>
+            <button className='hero-btn'>Ready to chat?</button>
           </div>
           </div>        
       </header>
 
       <section className='aboutme'>
-        <div className='aboutText'>
           <h2>About Me</h2>
-          <p>I'm a web developer currently at The Univeristy of Northampton taking a bachelor's degree in CyberSecurity. I love coding, and creating interesting stuff with my knowledge and skills.</p>
-          </div>
-          <div className='aboutImg'>
-          <img alt="a boy using a laptop" className='aboutmeImage' src="https://image.canva.com/sz_Kffk1HEEXWHosq0P80Q%3D%3D/XpLsbFLMxiE5ALd0FYty7A%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20230508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230508T121614Z&X-Amz-Expires=21630&X-Amz-Signature=1f8ba1f4d13dfc220a1a2389bdbff772d252010c2dff08483f5af59db7ac560f&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2008%20May%202023%2018%3A16%3A44%20GMT"></img>
-        </div>
+          <p>As a web developer and Cybersecurity student at the University of Northampton, I'm fueled by my passion for coding and creating fascinating projects that showcase my skills. With years of experience in computer science, I have a broad knowledge base, especially in web development and design, as well as SEO and blog writing.</p><p>My love for technology dates back to my childhood, where I spent countless hours tinkering with a Windows XP computer and exploring the possibilities of what it could do. Since then, I've been pursuing my career in tech with a strong sense of curiosity and a drive to push myself to new heights.</p><p>Today, I continue to explore innovative ways to enhance user experiences and stay up-to-date with cutting-edge technologies. I'm excited about the future of web development and cybersecurity, and I'm dedicated to making a significant impact with my expertise and passion.</p>
       </section>
 
       <section>
         <div className='projects'>
-          <p>The following are some of the projects I have completed so far...</p>
+          <p>Behold, the fruits of my labor! Feast your eyes on some of the incredible projects I've completed so far. Take a look and see for yourself!</p>
         </div>
 
         <div className='calculator'>
@@ -49,10 +44,8 @@ function App() {
             <img src="https://cdn-icons-png.flaticon.com/512/4645/4645203.png" alt="calculator display"></img>
           </div>
           <div className='calcText'>
-            <p className='openingtag'>&lt;script&gt;</p>
             <h2>Javascript Calculator</h2>
-            <p>Built a calculator that performs basic math operations very fast but more efficiently.</p>
-            <p className='closingtag'>&lt;script/&gt;</p>
+            <p>My calculator is a simple yet powerful tool for performing basic math functions such as addition, subtraction, multiplication, and division. It has a user-friendly interface and a large display that shows the current calculation and final result in real-time.</p>
           </div>
         </div>
 
@@ -61,39 +54,24 @@ function App() {
           <p className='quotemark leftquote'><FaQuoteLeft/></p>
           <div className="quotetext">
             <h2>Quote Generator</h2>
-            <p>Built an app that uses an API to fetch quotes about life and displays them </p>
+            <p>I built an app that fetches inspiring quotes about life using an API. The app has a simple and user-friendly interface that displays quotes in a visually appealing format. It's perfect for anyone who needs a little motivation and inspiration to help them stay focused and achieve their goals. </p>
           </div>
           <p className='quotemark rightquote'><FaQuoteRight/></p>
         </div>
 
         <div className='drumpads'>
           <h2>Drum pads</h2>
-          <p>This app has nine pads, each with a unique sound. When you click on either of them, it plays the sound. You can play it in a pattern to make a complete beat sequence.</p>
+          <p>This app features nine pads, each with a unique sound that can be played with a click. Users can create a complete beat sequence by playing the sounds in a pattern. It's perfect for anyone who wants to explore their musical abilities and create amazing beats and sounds.</p>
           <img src="https://m.media-amazon.com/images/I/61W4xdnOeZL.png" alt="drums pad"></img>
           <button>Check it Out!</button>
         </div>
       </section>
 
       <section className='hobbies'>
-        <h2>Besides Work...</h2>
-        <div className='cards'>
-          <div className='card'>
-            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="I love music"></img>
-          </div>
+        <h2>My Life Beyond Work</h2>
+        <p>When I'm not coding, I love to immerse myself in music. Here are some of my all-time favorite tunes</p>
 
-          <div className='card'>
-            <img src="https://images.unsplash.com/photo-1575975243243-5462a2054ed2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="Headphones"></img>
-          </div>
-
-          <div className='card'>
-            <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1060&q=80" alt="Spinning vinyl"></img>
-          </div>
-          
-        </div>
-
-        <div className='music-player'>
-          <h2>Favourite Songs</h2>
-          <div className='songs'>
+        <div className='songs'>
           <div className='song'>
             <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Firework_cover.png" alt="spinning disc with album icon"></img>
             <p className='title'>Fireworks</p>
@@ -126,7 +104,6 @@ function App() {
             <button >< FaPlay/></button>
             <button ><FaStop /></button>
           </div>
-          </div>
 
         </div>
       </section>
@@ -134,20 +111,20 @@ function App() {
       <section className='gaming'>
       
 
-        <iframe className="video"
+        <iframe className="video" title="callofduty"
           src={`https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1&loop=1&playlist=${videoID}&controls=0`}
           frameBorder="0"
           allowFullScreen
         ></iframe>
         <div className='content'>
-          <h2 >I also enjoy competitive mobile gaming</h2>
+          <h2 >Thriving in the world of competitive mobile gaming is my guilty pleasure.</h2>
         </div>
           
       </section>
 
       <footer>
-        <h2>I do freelance work</h2>
-        <p>Have an exciting project where you need some help? <br/>Send me a message and <a href="email">let's chat</a></p>
+        <h2>Ready to Bring Your Vision to Life?</h2>
+        <p>Looking for a skilled freelancer to help bring your project to the next level? <br/>Let's collaborate and create something amazing together. Reach out today and <a href="email" className='chatlink'>let's chat!</a></p>
         <ul>
           <li><a href="instagram.html"><FaInstagram/></a></li>
           <li><a href="twitter.html"><FaTwitter/></a></li>
