@@ -29,20 +29,20 @@ button{
     color: #fff;
 }
 header{
-    height: 100svh;
+    min-height: 100vh;
     background-image: linear-gradient(to right,#1b5a82,#0f0d4a,#070119,#321074,#742ac9);
     text-align: right;
 
 }
 .navbar{
-    width: 85%;
-    height: 70px;
+    width: 88%;
     display: flex;
     align-items: center;
     justify-content: right;
     margin: auto;
 }
 .navbar ul{
+    margin-top: 1rem;
     list-style: none;
 }
  .navbar li{
@@ -52,11 +52,14 @@ header{
     color: cyan;
     text-align: center;
     text-decoration: none;
-    padding:10px;
+    padding:0.70em 1.50em;
     font-size: 1.25rem;
-    margin: 0 20px;
+    margin: 20px;
     border-radius: 10px;
     transition: 0.5s;
+ }
+ .close, .open{
+    display: none;
  }
  .navbar li a:hover{
     background-color: #fff;
@@ -66,7 +69,7 @@ header{
     display: flex;
     max-width: 80%;
     justify-content: space-between;
-    margin: 20px auto;
+    margin: 1rem auto;
  }
 .hero-image{
     flex-basis: 50%;
@@ -91,11 +94,11 @@ header{
     line-height: 150%;
 }
 .hero-btn{
-    padding: 0.25em 3em;
+    padding: 0.20em 4em;
     border-radius:1.75em;
     font-size: 1.1em;
     border: none;
-    margin: 1em 0;
+    margin: 2em 0;
     text-transform: uppercase;
     font-weight: bold;
     background-color: transparent;
@@ -123,6 +126,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .projects p{
     max-width: 50%;
@@ -207,6 +211,7 @@ header{
     min-width: 50%;
     max-width: 50%;
     margin: auto;
+    padding: 2rem;
 
 }
 .drumpads button{
@@ -241,7 +246,7 @@ header{
 }
 
 .song button{
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     padding: 10px;
     margin-right: 10px;
     font-size: 1rem;
@@ -336,11 +341,53 @@ p{
 }
 
 .navbar{
+    position: fixed;
     width: 100%;
-    height: 30px;
+    height: 0%;
+    background-color: rgba(0,0,0,0.9);
+    left: 0;
+    top: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.navbar ul{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+
+.navbar li a {
+    display: block;
+    margin: 0;
+    border-radius: 0px;
+ }
+
+.close, .open{
+    display: block;
+    position: absolute;
+    top: 1.5%;
+    right: 7%;
+    padding: 0.20em;
+    color: #fff;
+    background-color: transparent;
+    font-size: 1.75em;
+    border: none;
 }
 .main{
     text-align: center;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    padding-top: 3.5rem;
+}
+.main h1{
+    padding: 1rem 0;
+}
+.main p{
+    text-align: justify;
+}
+.hero-image img{
+    width: 100%;
 }
 
 .calculator{
@@ -351,6 +398,7 @@ p{
     font-size: 3rem;
     padding: 100px 0;
 }
+
 .quotetext{
     padding: 2rem;
 }
