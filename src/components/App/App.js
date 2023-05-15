@@ -22,12 +22,7 @@ function App() {
     
   }
 
-  const audio = document.getElementById("myaudio1");
-  const playbutton = document.getElementById("playbutton1");
-
-  playbutton.addEventListener("click", function(){
-    audio.play();
-  })
+  
 
   return (
     <div className="App">
@@ -36,9 +31,9 @@ function App() {
         <nav className="navbar" id="nav">
         <button className='close' id='close' onClick={handleCloseClick}><FaTimes /></button>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href ="#projects">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" onClick={handleCloseClick}>About</a></li>
+            <li><a href ="#projects" onClick={handleCloseClick}>Work</a></li>
+            <li><a href="#contact" onClick={handleCloseClick}>Contact</a></li>
           </ul>
         </nav>
         <main className='main'>
@@ -101,7 +96,7 @@ function App() {
             <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Firework_cover.png" alt="spinning disc with album icon"></img>
             <p className='title'>Fireworks</p>
             <p className='artist'>Katy Perry</p>
-            <button id='playbutton1'>< FaPlay /></button>
+            <button >< FaPlay /></button>
             <button ><FaStop/></button>
           </div>
 
