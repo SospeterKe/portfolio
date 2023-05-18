@@ -5,6 +5,34 @@ import { FaPlay, FaStop, FaGithub,FaInstagram, FaLinkedin, FaTwitter, FaQuoteLef
 function App() {
 
   const videoID = "n4b8FRUDNZo"; 
+  const headingRef = useRef([]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const paragraphs = headingRef.current;
+      const scrollTop = window.pageYOffset;
+
+      if (paragraphs.length > 0) {
+        const triggerOffset = 100; // Adjust the offset as needed
+
+        paragraphs.forEach((paragraph, index) => {
+          const paragraphOffset = paragraph.offsetTop;
+
+          if (scrollTop > paragraphOffset - triggerOffset) {
+            gsap.to(paragraph, { opacity: 0, duration: 1 });
+          } else {
+            gsap.to(paragraph, { opacity: 1, duration: 1 });
+          }
+        });
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
 
   const handleCloseClick = () => {
