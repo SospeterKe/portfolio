@@ -1,39 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Suranna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Suranna;
+    transition: all 0.25s ease-out;     
 }
 
 
 h1{
     font-size: 5rem;
     line-height: 100%;
+    font-family: Suranna;
 }
 h2{
     font-size: 4rem;
     line-height: 100%; 
-    margin: 50px 0;   
+    margin: 50px 0;  
+    font-family: Suranna; 
 }
 p{
     font-size: 20px; 
     line-height: 200%;
+    font-family: Urbanist, cursive;
 }
 button{
     transition: 0.2s;
 }
-.App{
+.App {
     background-color: #000;
     color: #fff;
-}
-header{
+  }
+  
+.header {
     min-height: 100vh;
-    background-image: linear-gradient(to right,#1b5a82,#0f0d4a,#070119,#321074,#742ac9);
     text-align: right;
-
-}
+  }
+  
 .navbar{
     width: 88%;
     display: flex;
@@ -92,23 +96,24 @@ header{
 }
 .main-title p{
     line-height: 150%;
+
 }
+
 .hero-btn{
-    padding: 0.20em 4em;
+    padding: 0.35em 4.25em;
     border-radius:1.75em;
     font-size: 1.1em;
     border: none;
     margin: 2em 0;
     text-transform: uppercase;
-    font-weight: bold;
     background-color: transparent;
     border: 2px solid #fff;
     color: #fff;
 }
 .hero-btn:hover{
-    color: #0b0705;
-    background-color: #742ac9;
-    border: 2px solid #742ac9;
+    color: cyan;
+    background-color: #1b5a82;
+    border: 2px solid #1b5a82;
 }
 .aboutme{
     max-width: 80%;
@@ -163,26 +168,13 @@ header{
     min-height: 100vh;
     max-width: 80%;
 }
-.quotemark{
-    font-size: 15vw;
-    line-height: 100%;
-    position: absolute;
-}
-.leftquote{
-    top: 5%;
-    left: 10%;
-}
-.rightquote{
-    top: 90%;
-    right: 10%;
-}
 
 .quotetext{
     padding: 8rem;
     margin-top: 10%;
     text-align: center;
     border-radius: 4rem 1rem;
-    background-image: linear-gradient(to right,#1b5a82,#0f0d4a,#070119,#321074,#742ac9);
+    background-image: linear-gradient(to right,#1b5a82,#0f0d4a,#070119,#321074,#542191);
 }
 .quotetext h2{
     margin: 30px 0;
@@ -367,7 +359,7 @@ p{
     display: block;
     position: absolute;
     top: 1.5%;
-    right: 7%;
+    right: 4.5%;
     padding: 0.20em;
     color: #fff;
     background-color: transparent;
@@ -378,10 +370,10 @@ p{
     text-align: center;
     margin: 0 auto;
     flex-direction: column-reverse;
-    padding-top: 3.5rem;
+    padding-top: 4.5rem;
 }
 .main h1{
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 .main p{
     text-align: justify;
@@ -405,14 +397,7 @@ p{
 .quotetext h2{
     margin: 30px 0;
 }
-.leftquote{
-    top: 8%;
-    left: 20%;
-}
-.rightquote{
-    top: 90%;
-    right: 20%;
-}
+
 .songs{
     display: block;
     
@@ -436,3 +421,4 @@ footer ul li a{
 }
 
 }
+

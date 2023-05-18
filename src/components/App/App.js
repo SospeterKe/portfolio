@@ -1,5 +1,7 @@
 import './App.css';
-import { FaPlay, FaStop, FaGithub,FaInstagram, FaLinkedin, FaTwitter, FaQuoteLeft, FaQuoteRight, FaEnvelope, FaBars,FaTimes } from "react-icons/fa";
+import { FaPlay, FaStop, FaGithub,FaInstagram, FaLinkedin, FaTwitter, FaEnvelope, FaBars,FaTimes } from "react-icons/fa";
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 
 
 function App() {
@@ -7,6 +9,7 @@ function App() {
   const videoID = "n4b8FRUDNZo"; 
   const headingRef = useRef([]);
 
+  //fadeout animation for the heading elements
   useEffect(() => {
     const handleScroll = () => {
       const paragraphs = headingRef.current;
@@ -33,7 +36,7 @@ function App() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
+  
 
   const handleCloseClick = () => {
     document.getElementById("nav").style.height = "0%";
@@ -41,7 +44,6 @@ function App() {
       document.getElementById("open").style.display = "block";
     }
 
-    
   }
 
   const handleOpenClick = () => {
@@ -54,7 +56,7 @@ function App() {
 
   return (
     <div className="App">
-      <header>
+      <header className='header'>
       <button className='open' id='open' onClick={handleOpenClick}><FaBars/></button>
         <nav className="navbar" id="nav">
         <button className='close' id='close' onClick={handleCloseClick}><FaTimes /></button>
@@ -69,10 +71,10 @@ function App() {
             <img src="https://static.vecteezy.com/system/resources/previews/008/878/184/non_2x/icosahedron-geometric-shape-3d-illustration-free-png.png" alt="Icosahedron geometric shape 3D illustration" ></img>
           </div>
           <div className="main-title">
-            <p>Hi,</p>
-            <h1>I'm Sospeter Kedogo</h1>
-            <p>I love crafting beautiful websites using HTML, CSS , JavaScript, and React.</p>
-            <button className='hero-btn'>Let's Chat</button>
+            <p ref={el => headingRef.current[0] = el}>Hi,</p>
+            <h1 ref={el => headingRef.current[1] = el}>I'm Sospeter Kedogo</h1>
+            <p ref={el => headingRef.current[2] = el}>I love crafting beautiful websites using HTML, CSS , JavaScript, and React.</p>
+            <button className='hero-btn' ref={el => headingRef.current[3] = el}>Let's Chat</button>
           </div>
           </main>        
       </header>
@@ -82,7 +84,7 @@ function App() {
           <p>As a web developer and Cybersecurity student at the University of Northampton, I'm fueled by my passion for coding and creating fascinating projects that showcase my skills. I have a broad knowledge base, especially in web design, as well as SEO and blog writing.</p><p>My love for technology dates back to my childhood, where I spent countless hours tinkering with a Windows XP computer and exploring the possibilities of what it could do. Since then, I've been pursuing my career in tech with a strong sense of curiosity and a drive to push myself to new heights.</p><p>Today, I continue to explore innovative ways to enhance user experiences and stay up-to-date with cutting-edge technologies. I'm excited about the future of web development and cybersecurity, and I'm dedicated to making a significant impact with my expertise and passion.</p>
       </section>
 
-      <section >
+      <section>
         <div className='projects'>
           <p>Behold, the fruits of my labor! Feast your eyes on some of the incredible projects I've completed so far.</p>
         </div>
@@ -90,7 +92,7 @@ function App() {
         <div className='calculator' id='projects'>
           <div className='calcText'>
             <h2>Javascript Calculator</h2>
-            <p>My calculator is a simple yet powerful tool for performing basic math functions such as addition, subtraction, multiplication, and division. It has a user-friendly interface and a large display that shows the current calculation and final result in real-time.</p>
+            <p>My calculator is a simple yet powerful tool for performing basic math functions such as addition, subtraction, multiplication, and division. It shows the current calculation and final result in real-time.</p>
           </div>
           <div className='calcImage'>
             <img src="https://cdn-icons-png.flaticon.com/512/4645/4645203.png" alt="calculator display"></img>
@@ -99,12 +101,10 @@ function App() {
 
 
         <div className='quotegenerator'>
-          <p className='quotemark leftquote'><FaQuoteLeft/></p>
           <div className="quotetext">
             <h2>Quote Generator</h2>
             <p>I built an app that fetches inspiring quotes about life using an API. The app has a simple and user-friendly interface that displays quotes in a visually appealing format. It's perfect for anyone who needs a little motivation and inspiration to help them stay focused and achieve their goals. </p>
           </div>
-          <p className='quotemark rightquote'><FaQuoteRight/></p>
         </div>
 
         <div className='drumpads'>
@@ -171,6 +171,7 @@ function App() {
 
       <footer>
         <h2>Ready to Bring Your Vision to Life?</h2>
+        
         <p>Let's collaborate and create something amazing together. Reach out today and <a href="email" className='chatlink'>let's chat!</a></p>
         <ul id='contact'>
           <li><a href="instagram.html"><FaInstagram/></a></li>
